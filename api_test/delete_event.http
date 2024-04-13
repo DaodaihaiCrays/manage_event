@@ -1,0 +1,2 @@
+DELETE  http://localhost:8080/events/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhhaWRhaTNAZ21haWwuY29tIiwiZXhwIjoxNzEzMDAyODQ4LCJ1c2VySWQiOjN9._-Typos7dwFjNtcXQj2sK_4VqaKS21CJwPpwCs_2ce0
