@@ -39,13 +39,13 @@ func Login(context *gin.Context) {
 	err = user.ValidateCredentials()
 
 	if err != nil {
-		context.JSON(http.StatusBadRequest, gin.H{"message": "Couldn't authenticate user1"})
+		context.JSON(http.StatusBadRequest, gin.H{"message": "Couldn't authenticate user"})
 		return		
 	}
 
 	token, err := utils.GenerateToken(user.Email, user.ID)
 	if err != nil {
-		context.JSON(http.StatusBadRequest, gin.H{"message": "Couldn't authenticate user2"})
+		context.JSON(http.StatusBadRequest, gin.H{"message": "Couldn't authenticate user"})
 		return		
 	}
 

@@ -27,7 +27,7 @@ func (e *Event) Save() error{
 	}	
 	defer stmt.Close()
 
-	result, err := stmt.Exec(e.Name, e.Description, e.Location, e.Datetime, e.UserId) //Use .Exec for update, insert, delete data
+	result, err := stmt.Exec(e.Name, e.Description, e.Location, e.Datetime, e.UserId) //Use .Prepare + .Exec for update, insert, delete data
 	if err!=nil {
 		return err
 	}

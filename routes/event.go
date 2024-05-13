@@ -19,8 +19,8 @@ var globalResponseSuccess = Response{
 }
 
 var globalResponseFail = Response{
-	Code:    200,
-	Message: "Success",
+	Code:    400,
+	Message: "Fail",
 }
 
 func getEvents(context *gin.Context) {
@@ -86,7 +86,6 @@ func updateEvent(context *gin.Context) {
 		return
 	}
 	
-
 	if err != nil {
 		context.JSON(http.StatusInternalServerError, gin.H{"message": "Couldn't get an event data by id"})
 		return
