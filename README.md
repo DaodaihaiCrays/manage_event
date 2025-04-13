@@ -1,4 +1,4 @@
-*Manage Event 
+# Manage Event 
 
 • A Backend system for event management using Golang language.  
 • I used the gin-gonic/gin framework to create APIs. Implemented full CRUD (Create, Read, Update, Delete) capabilities for event.  
